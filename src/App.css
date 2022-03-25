@@ -4,10 +4,16 @@
 
 h1 {
   color: #fdfdff;
+  
 }
 
-h2 {
-  color: rgb(26, 24, 24);
+h3 {
+  color: #151430;
+  padding-bottom: 10px;
+}
+
+h1, h3 {
+  line-height: 14px;
 }
 
 .playlist-form {
