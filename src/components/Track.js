@@ -4,7 +4,7 @@ import TrackList from './TrackList';
 
 import './Track.css';
 
-const Track = () => {
+const Track = ( { data } ) => {
   return (
           <div className="Track">
             <h1 className="title">Song Playlist</h1>
