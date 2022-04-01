@@ -11,7 +11,7 @@ const Track = ( { data } ) => {
             <div className="track-list">
               {data.map((track, index) => (
                 <TrackList
-                  key={track.id}
+                  key={index}
                   source={track.album.images[0].url}
                   title={track.name}
                   artist={track.artists[0].name}
