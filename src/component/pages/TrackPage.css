@@ -1,0 +1,16 @@
+.Track {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e6e6e6;
+    margin-bottom: 30px;
+    padding: 0 14px;
+}
+
+.track-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    padding: 20px 0;
+}

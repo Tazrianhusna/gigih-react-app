@@ -1,14 +1,26 @@
-import logo from './logo.svg';
-import Track from './components/Track';
-import Login from './components/Login';
-import Auth from './components/Auth';
-
-const giphy_secret_key = process.env.REACT_APP_GIPHY_KEY
+import './App.css';
+import TrackPage from './component/pages/TrackPage'
+import { TokenProvider } from './component/context/Token'
+import { TracksProvider } from './component/context/Tracks'
+import Navbar from './component/feature/Navbar';
 
 function App() {
   return (
-    <Auth />
+    <>
+      <Navbar />
+      <TrackPage />
+    </>
   );
 }
 
-export default App;
+const AppContainer = () => {
+  return (
+    <TokenProvider>
+      <TracksProvider>
+        <App />
+      </TracksProvider>
+    </TokenProvider>
+  )
+}
+
+export default AppContainer;
