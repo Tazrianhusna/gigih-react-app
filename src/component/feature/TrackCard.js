@@ -1,20 +1,20 @@
 import React from 'react'
 import { useTrackContext } from '../context/Tracks'
-import './TrackCard.css'
 
-function TrackCard({ source, title, artist, album, uri }) {
+import './css/TrackCard.css'
+
+function TrackCard({ track }) {
+  const { album, name, artists, uri } = track
   const { selectedTracks, setSelectedTracks } = useTrackContext()
 
   const handleSelect = () => {
     const selected = selectedTracks.find((turi) => turi === uri)
-    let newSelectedTracks
     if (!selected) {
-      newSelectedTracks = [...selectedTracks, uri]
+      setSelectedTracks((prevSelectedTracks) => [...prevSelectedTracks, uri])
     }
     else {
-      newSelectedTracks = selectedTracks.filter((turi) => turi !== uri)
+      setSelectedTracks(selectedTracks.filter((turi) => turi !== uri))
     }
-    setSelectedTracks(newSelectedTracks)
   }
 
   const checkButton = () => {
@@ -27,12 +27,11 @@ function TrackCard({ source, title, artist, album, uri }) {
     <div className="track-item">
       <div className="album">
         <div className="album-image">
-          <img src={source} alt={title} />
+          <img src={album.images[0].url} alt={name} />
         </div>
         <div className="album-info">
-          <h2>{title}</h2>
-          <h3>{artist}</h3>
-          <h4>{album}</h4>
+          <h2>{name}</h2>
+          <h4>{artists[0].name} - {album.name}</h4>
           <button onClick={handleSelect}>{checkButton()}</button>
         </div>
       </div>

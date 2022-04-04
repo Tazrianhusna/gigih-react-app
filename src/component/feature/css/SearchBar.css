@@ -52,3 +52,11 @@
         -5px -5px 15px rgba(14, 13, 32, 0.2);
 
 }
+
+.search-error {
+    color: #ff4e44;
+    position: absolute;
+    bottom: -1.25rem;
+    left: 50%;
+    transform: translateX(-70%);
+} 

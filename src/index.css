@@ -6,10 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1c1a3f;
-  /* color:#d9dadc; */
+  color:#d9dadc;
 }
 
 /*
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
