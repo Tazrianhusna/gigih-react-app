@@ -13,7 +13,7 @@
 .modal-content {
     position: relative;
     display: flex;
-    background: #23214f;
+    background:#0c1a2e;
 
     flex-direction: column;
     width: 40%;
@@ -62,15 +62,23 @@
 .input-group textarea {
     height: 8rem;
 }
-.playlist-submit-button {
-    --button-bg-color: #1DB954;
-    --button-text-color:#f5f5f5;
+
+.btn-playlist {
+    color :#f5f5f5;
     margin-right: 1rem;
+    cursor: pointer;
+    padding: 6px 18px;
+    border-radius: 20px;
 }
-.playlist-cancel-button {
-    --button-bg-color: #D0342C;
-    --button-text-color:#f5f5f5;
-    margin-right: 2rem;
+
+.btn-submit {
+    background-color : #1DB954;
+    border: 1px solid #1DB954;
+}
+.btn-cancel {
+    background-color : #D0342C;
+    border: 1px solid #D0342C;
+    
 }
 .playlist-title-error {
     color: #ff4e44;

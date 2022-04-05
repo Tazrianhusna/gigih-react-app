@@ -5,18 +5,18 @@
 
 .search-input {
     width: 40%;
-    border: 3px solid #007e8f;
+    border: 3px solid #062859;
     padding: 5px;
     height: 20px;
     margin-right: 5px;
     border-radius: 5px;
     outline: none;
-    color: #007e8f;
-    background-color: #e6f8fa;
+    color: #21477d;
+    background-color: #ced6e2;
 }
 
 .search-input:focus {
-    color: #007e8f;
+    color: #21477d;
 }
 
 .search-input:hover {
@@ -31,7 +31,7 @@
     font-size: 14px;
     color: white;
     font-weight: bold;
-    background-color: #007e8f;
+    background-color: #062859;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor: pointer;
     opacity: 1;
@@ -43,7 +43,7 @@
 }
 
 .btn-search:hover {
-    background-color: #007181;
+    background-color: #072d64;
 }
 
 .btn-search:active {
