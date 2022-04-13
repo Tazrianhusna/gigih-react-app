@@ -1,0 +1,69 @@
+.trackcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    background-color: #0c1a2e;
+    color: white;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    position: relative;
+    border: 1px solid #0e1e34;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+
+  .trackcard_header {
+    width: 80%;
+    margin: auto;
+  }
+
+  .trackcard_header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .trackcard_body {
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .trackcard_body h2 {
+    font-size: 1.5rem;
+  }
+  .trackcard_body h4 {
+    font-size: 1rem;
+  }
+  .trackcard_footer {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .trackcard_btn {
+    width: 80%;
+    padding: 0.25rem 0;
+    background-color: #062859;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color: #e6e6e6;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+        rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+        rgba(8, 8, 8, 0.1) 0px 0px 0px 1px inset;
+    box-sizing: border-box;
+    border: 0;
+  }
+  .trackcard_btn:hover {
+    background-color: #072d64;
+  }
+
+  .trackcard_btn:active {
+    box-shadow: inset 5px 5px 5px rgba(14, 13, 32, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1),
+    -5px -5px 15px rgba(14, 13, 32, 0.2);
+  }

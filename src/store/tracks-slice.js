@@ -20,14 +20,12 @@ const trackSlice = createSlice({
         ...state,
         selectedTracks: action.payload,
       };
-      // state.selectedTracks = action.payload;
     },
     setUserPlaylist(state, action) {
       return {
         ...state,
         userPlaylist: action.payload,
       };
-      // state.userPlaylist = action.payload;
     },
   },
 });
