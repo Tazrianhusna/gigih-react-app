@@ -1,7 +1,3 @@
-## Starting the app
-
-Visit [homework-gigih-olive.vercel.app]
-
 ## Features
 
     - Login to Spotify Music
