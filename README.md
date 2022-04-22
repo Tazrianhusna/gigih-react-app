@@ -1,6 +1,6 @@
-# Starting The APP
+## Starting the app
 
-visit : homework-gigih-olive.vercel.app
+Visit [homework-gigih-olive.vercel.app]
 
 ## Features
 
