@@ -3,7 +3,7 @@ import { login } from '../utils/auth';
 
 import styles from './Login.module.css';
 
-function Login() {
+const Login = () => {
   return (
     <div className={styles.login}>
       <button type="button" className={styles.login_button} onClick={login}>
