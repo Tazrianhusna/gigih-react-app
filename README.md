@@ -10,7 +10,7 @@ visit : homework-gigih-olive.vercel.app
     - Tracks Details ( title, artist, album)
     - Select and Deselect Playlist
 
-##How to use app
+## How to use app
 
 - Click "Login With Spotify" to login using spotify authentication.
 - Redirect to search page by clickin on "Create Playlist".
