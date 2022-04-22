@@ -2,22 +2,22 @@ export interface ExplicitContent {
     filter_enabled: boolean;
     filter_locked: boolean;
   }
-  
+
   export interface ExternalUrls {
     spotify: string;
   }
-  
+
   export interface Followers {
     href?: any;
     total: number;
   }
-  
+
   export interface Image {
     height?: any;
     url?: string;
     width?: any;
   }
-  
+
   export default interface UserType {
     country: string;
     display_name: string;
@@ -31,4 +31,3 @@ export interface ExplicitContent {
     type: string;
     uri: string;
   }
-  

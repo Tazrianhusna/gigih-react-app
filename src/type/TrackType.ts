@@ -1,7 +1,7 @@
 export interface ExternalUrls {
     spotify: string;
   }
-  
+
   export interface Artist {
     external_urls: ExternalUrls;
     href: string;
@@ -10,17 +10,17 @@ export interface ExternalUrls {
     type: string;
     uri: string;
   }
-  
+
   export interface ExternalUrls2 {
     spotify: string;
   }
-  
+
   export interface Image {
     height: number;
     url: string;
     width: number;
   }
-  
+
   export interface Album {
     album_type: string;
     artists: Artist[];
@@ -35,11 +35,11 @@ export interface ExternalUrls {
     type: string;
     uri: string;
   }
-  
+
   export interface ExternalUrls3 {
     spotify: string;
   }
-  
+
   export interface Artist2 {
     external_urls: ExternalUrls3;
     href: string;
@@ -48,15 +48,15 @@ export interface ExternalUrls {
     type: string;
     uri: string;
   }
-  
+
   export interface ExternalIds {
     isrc: string;
   }
-  
+
   export interface ExternalUrls4 {
     spotify: string;
   }
-  
+
   export interface Item {
     album: Album;
     artists: Artist2[];
@@ -76,7 +76,7 @@ export interface ExternalUrls {
     type: string;
     uri: string;
   }
-  
+
   export interface Tracks {
     href: string;
     items: Item[];
@@ -86,8 +86,7 @@ export interface ExternalUrls {
     previous?: any;
     total: number;
   }
-  
+
   export default interface TracksType {
     tracks: Tracks;
   }
-  

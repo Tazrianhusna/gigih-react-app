@@ -1,0 +1,45 @@
+.myplaylistcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background-color: #0c1a2e;
+    color: white;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    position: relative;
+    border: 1px solid #0e1e34;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.myplaylistcard:hover {
+    background-color: #0e1e34;
+}
+
+.myplaylistcard_header {
+    width: 80%;
+    margin: auto;
+    flex-grow: 0;
+}
+.myplaylistcard_header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    
+}
+.myplaylistcard_body {
+    padding: 1rem;
+    text-align: justify;
+    word-wrap: break-word;
+    flex-grow: 1;
+}
+.myplaylistcard_body h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.myplaylistcard_body h4 {
+    font-size: 1rem;
+}
+.myplaylistcard_footer {
+    padding: 0 1rem;
+} 

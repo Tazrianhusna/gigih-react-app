@@ -32,7 +32,7 @@ const SearchBar: FC<searchProps> = ({ setIsSearched }) => {
     if (keyword) {
       const searchParams = {
         q: keyword,
-        limit: '16',
+        limit: '10',
         type: 'track',
         market: 'ID',
       };

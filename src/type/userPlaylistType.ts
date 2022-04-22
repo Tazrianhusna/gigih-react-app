@@ -1,17 +1,17 @@
 export interface ExternalUrls {
     spotify: string;
   }
-  
+
   export interface Image {
     height: number;
     url: string;
     width: number;
   }
-  
+
   export interface ExternalUrls2 {
     spotify: string;
   }
-  
+
   export interface Owner {
     display_name: string;
     external_urls: ExternalUrls2;
@@ -20,12 +20,12 @@ export interface ExternalUrls {
     type: string;
     uri: string;
   }
-  
+
   export interface Tracks {
     href: string;
     total: number;
   }
-  
+
   export interface Item {
     collaborative: boolean;
     description: string;
@@ -42,7 +42,7 @@ export interface ExternalUrls {
     type: string;
     uri: string;
   }
-  
+
   export default interface UserPlaylistType {
     href: string;
     items: Item[];
@@ -52,4 +52,3 @@ export interface ExternalUrls {
     previous?: any;
     total: number;
   }
-  

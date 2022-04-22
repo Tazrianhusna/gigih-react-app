@@ -12,7 +12,7 @@ import Login from '../pages/Login';
 import MyPlaylist from '../pages/MyPlaylist';
 import NotFoundPage from '../pages/NotFoundPage';
 import RedirectPage from '../pages/RedirectPage';
-import { trackAction } from '../store/tracks-slice';
+import { trackAction } from '../store/tracks-slice.ts';
 import { userAction } from '../store/user-slice';
 import { getProfile, getUserPlaylist } from '../utils/api';
 import { getStorage } from '../utils/localstorage';
@@ -23,9 +23,8 @@ function AppRouter() {
 
   const getPlaylist = useCallback(async () => {
     const { data } = await getUserPlaylist();
-    dispatch(trackAction.setUserPlaylist(data));
+    dispatch(trackAction.setUserPlaylist(data.items));
   }, [dispatch]);
-
   const getCurrentUser = useCallback(async () => {
     const { data } = await getProfile();
     dispatch(userAction.setUser(data));
